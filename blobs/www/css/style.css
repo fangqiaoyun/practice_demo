@@ -1,0 +1,22 @@
+body {
+  text-align:center
+} 
+
+.sub_nav {
+  overflow: hidden;
+  font-size: 20px;
+  width: 80px;
+  height: 30px;
+  float: left;
+  position: relative;
+  left: 430px;
+}
+
+.picture {
+  clear: both;
+  widows: 500px;
+}
+
+.text-box {
+  float: left;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Page</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li class="sub_nav">首 页</li>
+      <li class="sub_nav">关 注</li>
+      <li class="sub_nav">栏 目</li>
+    </ul>
+    <!--<div class="sub_category">首 页</div>
+    <div class="sub_category">关 注</div>
+    <div class="sub_category">栏 目</div>-->
+  </div>
+  <div class="content">
+    <ul class="picture">
+      <% for(let i = 0; i < banners.length; i++) { %>
+      <li>
+        <img src="<%= banners[i].src %>" alt="">
+        <div class="text-box">
+          <h2><%= banners[i].title %></h2>
+          <p><%= banners[i].sub_title %></p>
+        </div>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+  <div class="articles">
+    <ul>
+      <% for(let i = 0; i < articles.length; i++) { %>
+      <li>
+        <a href="/articles?id=<%= articles[i].ID %>">
+          <h2><%= articles[i].title %></h2>
+          <p><%= articles[i].summery %></p>
+        </a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>

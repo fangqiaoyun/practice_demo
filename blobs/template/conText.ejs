@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>articles</title>
+</head>
+<body>
+  <div class="content">
+    <div class="avatar">
+      <h2><img src="<%= article_data.author_src %>" alt=""></h2>
+      <p><%= article_data.author %></p>
+    </div>
+    <div class="cont">
+      <h3><p><%= article_data.title %></p></h3>
+      <div class="time"><p><%= article_data.sDate %></p></div>
+      <div class="article_cont"><p><%- article_data.content %></p></div>
+    </div>
+    <div class="foot-btn">
+      <ul>
+        <li class="say">
+          <a href="javascript:;"><i></i><span>0</span></a>
+        </li>
+        <li class="zan">
+          <a href="/articles?id=<%=article_data.ID%>&act=like"><i></i><span><%= article_data.n_like %></span></a>
+        </li>
+        <li class="xing">
+          <a href="javascript:;"><i><img src="images/xin.png" alt=""></i></a>
+        </li>
+        <li class="fx">
+          <a href="javascript:;">
+            <i><img src="images/fx.png" alt=""></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
